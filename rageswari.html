@@ -110,6 +110,14 @@
             color: white;
             box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
             animation: pulse 2s ease-in-out infinite;
+            overflow: hidden;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
         }
 
         @keyframes pulse {
@@ -752,7 +760,9 @@
     <div class="container">
         <header class="header">
             <div class="header-content">
-                <div class="profile-image">RS</div>
+                <div class="profile-image">
+                    <img src="resources/profile.jpeg" alt="Rageswari Subudhi Profile Photo">
+                </div>
                 <h1>Rageswari Subudhi</h1>
                 <p class="subtitle">Agricultural Engineering Expert | Flood Management Specialist</p>
                 
