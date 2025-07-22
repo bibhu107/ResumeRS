@@ -1,0 +1,17 @@
+# LaTeX temporary files
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# MacOS files
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+
+# Build artifacts
+build/
