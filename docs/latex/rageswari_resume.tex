@@ -1,0 +1,226 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Rageswari}{Subudhi}{ \urlstyle{same}\href{http://example.com}{example.com}| \href{mailto:subudhi141096@gmail.com}{subudhi141096@gmail.com} | +91-9078135156
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Ph.D. in Soil \& Water Conservation Engineering}
+\descript{CTAE, MPUAT, Udaipur}
+\location{Expected 2025 | OGPA: 8.78}
+\sectionsep
+
+\subsection{M.Tech. in Soil \& Water Conservation Engineering}
+\descript{CTAE, MPUAT, Udaipur}
+\location{July 2021 | OGPA: 8.35 (Gold Medal)}
+\sectionsep
+
+\subsection{B.Tech. in Agricultural Engineering}
+\descript{CAET, OUAT, Bhubaneswar}
+\location{April 2019 | OGPA: 7.98}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+LinkedIn:// \href{https://www.linkedin.com/in/rageswari-subudhi-250812179/}{\bf rageswari-subudhi} \\
+ResearchGate:// \href{https://www.researchgate.net/scientific-contributions/2135966431_Rageswari_Subudhi}{\bf Rageswari Subudhi} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Technical Skills}
+\subsection{Hydraulic Modeling}
+HEC-HMS \textbullet{} HEC-RAS \textbullet{} SWMM \\
+StormCAD \textbullet{} SWAT \\
+\sectionsep
+
+\subsection{GIS \& Mapping}
+ArcGIS \textbullet{} QGIS \textbullet{} Google Earth Pro \\
+AutoCAD \\
+\sectionsep
+
+\subsection{Programming}
+Python \textbullet{} R \textbullet{} MATLAB \\
+C++ \textbullet{} SPSS \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Specializations}
+Flood Management \textbullet{} DPR Preparation \\
+Data Analysis \textbullet{} Report Writing \\
+Hydraulic \& Hydrologic Modeling \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{MaRS Engineering Pvt. Ltd.}
+\descript{| Associate Design Engineer }
+\location{June 2025 - Present | Bhubaneswar}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Prepared DPRs for Bhubaneswar stormwater drainage under BMC
+\item Conducted hydraulic modeling using SWMM/HEC-RAS/StormCAD
+\item Designed stormwater networks for urban flood mitigation
+\item Guided survey teams for topographic data collection
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Aquascape Technologies Pvt. Ltd.}
+\descript{| Irrigation Designing Engineer \& Project Coordinator }
+\location{Feb - June 2025 | Bangalore}
+\begin{tightemize}
+\item Developed efficient irrigation systems with detailed hydraulic plans
+\item Managed project timelines, budgets, and client coordination
+\item Performed site assessments for irrigation projects
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Janardan Rai Nagar University}
+\descript{| Assistant Professor, Agricultural Engineering }
+\location{Mar 2023 – Mar 2024 | Udaipur, Rajasthan}
+\begin{tightemize}
+\item Delivered courses in Soil \& Water Conservation, Farm Machinery \& Power
+\item Mentored students on academic and career development
+\item Conducted research in Soil and Water Conservation Engineering
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Selected Publications}
+\runsubsection{Calibration and Validation of HEC-HMS Model for Baitarani River Basin}
+\descript{International Journal for Research in Engineering Application \& Management, 10(09), 35-48 (2024)}
+SJIF Impact Factor: 8.128
+\sectionsep
+
+\runsubsection{Rainfall Probability Analysis for Crop Planning in Pratapgarh District of Rajasthan, India}
+\descript{Int.J.Curr.Microbiol.App.Sci. 10(08): 611-619 (2021)}
+NAAS score: 5.38
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards \& Honors} 
+\begin{tabular}{rll}
+2023	     & NET Qualification & Agricultural Scientists Recruitment Board\\
+2022	     & Best Paper Award & IASC, Birsa Agricultural University, Ranchi\\
+2022	     & Best Poster Award & BAU, Ranchi\\
+2021	     & Gold Medal & First in Order of Merit in M.Tech, MPUAT\\
+2019	     & GATE Qualification & AIR 155, AICTE, MHRD\\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Professional Memberships} 
+\begin{tabular}{rll}
+2019 & Life Member & Indian Society of Agricultural Engineers\\
+2016 & Life Member & Indian Association of Soil \& Water Conservationists\\
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
