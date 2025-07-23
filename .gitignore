@@ -1,17 +1,93 @@
-# LaTeX temporary files
+# Build outputs
+dist/
+temp/
+*.pdf
 *.aux
 *.log
 *.out
-*.synctex.gz
-*.fls
 *.fdb_latexmk
+*.fls
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
 
-# MacOS files
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
 # Editor files
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
 
-# Build artifacts
-build/
+# Node modules (if using npm in future)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Log files
+*.log
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Cache directories
+.cache/
+.parcel-cache/
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# Ignore compiled files but keep source
+src/latex/*.pdf
+src/latex/*.aux
+src/latex/*.log
+src/latex/*.out
+src/latex/*.fdb_latexmk
+src/latex/*.fls
+src/latex/*.synctex.gz
+
+# Keep important files
+!README.md
+!LICENSE
+!.gitignore
