@@ -122,7 +122,7 @@ body::before {
 .header {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--info-color) 100%);
     color: white;
-    padding: 80px 40px;
+    padding: 40px 30px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -175,22 +175,22 @@ body::before {
 }
 
 .profile-image {
-    width: 180px;
-    height: 180px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    margin: 0 auto 40px;
+    margin: 0 auto 25px;
     background: linear-gradient(45deg, var(--accent-color), var(--success-color), var(--info-color));
     background-size: 200% 200%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 72px;
+    font-size: 48px;
     font-weight: 600;
     color: white;
     box-shadow: 
-        0 0 0 8px rgba(255, 255, 255, 0.2),
-        0 0 0 16px rgba(255, 255, 255, 0.1),
-        0 20px 40px rgba(0, 0, 0, 0.3);
+        0 0 0 6px rgba(255, 255, 255, 0.2),
+        0 0 0 12px rgba(255, 255, 255, 0.1),
+        0 15px 30px rgba(0, 0, 0, 0.3);
     animation: profilePulse 3s ease-in-out infinite, profileGradient 4s ease-in-out infinite;
     overflow: hidden;
     position: relative;
@@ -233,9 +233,9 @@ body::before {
 
 .header h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 4rem;
+    font-size: 2.8rem;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-shadow: 
         2px 2px 4px rgba(0, 0, 0, 0.3),
         0 0 20px rgba(255, 255, 255, 0.2);
@@ -815,6 +815,31 @@ body::before {
     color: var(--text-primary);
     margin-bottom: 8px;
     line-height: 1.4;
+}
+
+.publication-title a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all var(--transition-normal);
+    position: relative;
+}
+
+.publication-title a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.publication-title a::after {
+    content: '🔗';
+    margin-left: 8px;
+    font-size: 0.8em;
+    opacity: 0.7;
+    transition: all var(--transition-fast);
+}
+
+.publication-title a:hover::after {
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 .publication-journal {

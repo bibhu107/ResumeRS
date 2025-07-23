@@ -43,7 +43,33 @@ ResumeRS/
    cd ResumeRS
    ```
 
-2. Open `src/index.html` in your web browser to view the resume
+2. Open `index.html` in your web browser to view the resume
+
+### Deploy to GitHub Pages
+
+This repository is configured for automatic deployment to GitHub Pages:
+
+1. **Fork or clone this repository** to your GitHub account
+
+2. **Enable GitHub Pages**:
+   - Go to your repository settings
+   - Navigate to "Pages" section
+   - Under "Source", select "GitHub Actions"
+
+3. **Push changes** to the `main` or `master` branch:
+   ```bash
+   git add .
+   git commit -m "Deploy resume to GitHub Pages"
+   git push origin main
+   ```
+
+4. **Access your live resume** at:
+   `https://yourusername.github.io/ResumeRS`
+
+The GitHub Actions workflow (`.github/workflows/deploy.yml`) will automatically:
+- Build and deploy your resume on every push
+- Make it available at your GitHub Pages URL
+- Update the live site within minutes
 
 ### Generate PDF Version
 
