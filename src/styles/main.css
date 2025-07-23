@@ -38,7 +38,9 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
     color: var(--text-primary);
-    background: var(--bg-gradient);
+    background: 
+        linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+        url('assets/images/agriculture-tech-bg.jpg') center/cover no-repeat fixed;
     min-height: 100vh;
     padding: 20px 0;
     position: relative;
@@ -53,9 +55,9 @@ body::before {
     width: 100%;
     height: 100%;
     background: 
-        radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(255, 177, 153, 0.3) 0%, transparent 50%),
-        radial-gradient(circle at 40% 40%, rgba(120, 119, 198, 0.2) 0%, transparent 50%);
+        radial-gradient(circle at 20% 80%, rgba(34, 197, 94, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
     z-index: -1;
     animation: backgroundShift 20s ease-in-out infinite;
 }
@@ -120,9 +122,11 @@ body::before {
 
 /* Header Section */
 .header {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--info-color) 100%);
+    background: 
+        linear-gradient(rgba(30, 41, 59, 0.8), rgba(51, 65, 85, 0.8)),
+        url('assets/images/aiAgri.png') center/cover no-repeat;
     color: white;
-    padding: 40px 30px;
+    padding: 25px 30px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -175,22 +179,22 @@ body::before {
 }
 
 .profile-image {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    margin: 0 auto 25px;
+    margin: 0 auto 15px;
     background: linear-gradient(45deg, var(--accent-color), var(--success-color), var(--info-color));
     background-size: 200% 200%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 600;
     color: white;
     box-shadow: 
-        0 0 0 6px rgba(255, 255, 255, 0.2),
-        0 0 0 12px rgba(255, 255, 255, 0.1),
-        0 15px 30px rgba(0, 0, 0, 0.3);
+        0 0 0 4px rgba(255, 255, 255, 0.2),
+        0 0 0 8px rgba(255, 255, 255, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.3);
     animation: profilePulse 3s ease-in-out infinite, profileGradient 4s ease-in-out infinite;
     overflow: hidden;
     position: relative;
@@ -233,9 +237,9 @@ body::before {
 
 .header h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     text-shadow: 
         2px 2px 4px rgba(0, 0, 0, 0.3),
         0 0 20px rgba(255, 255, 255, 0.2);
@@ -253,9 +257,9 @@ body::before {
 }
 
 .header .subtitle {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     opacity: 0.95;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     animation: subtitleFloat 4s ease-in-out infinite;
@@ -270,8 +274,8 @@ body::before {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
-    margin-top: 40px;
+    gap: 15px;
+    margin-top: 20px;
 }
 
 .contact-item {
